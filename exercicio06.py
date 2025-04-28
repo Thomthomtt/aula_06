@@ -1,7 +1,9 @@
-user=[""]*5
-passw=[0]*5
-for i in range(len(user)):
-    user[i]=input("Digite o usuario: ")
-    passw[i]=int(input("Digite a senha: "))
-for x in range(len(user)):
-    print(f"Aqui está a lista dos usuarios: nome: {user[x]}, senha: {passw[x]} posição: {[x]}")
+usuarios=["joao", "carlos", "mario", "maria", "josefa"]
+senhas=[1234, 3432, 5432, 3333, 6666]
+user=input("Digite seu Usuarios: ")
+passw=int(input("Digite sua senha: "))
+for i in range(5):
+    if usuarios[i]!=user and senhas[i]!=passw:
+        print("Login falhou")
+    else:
+        print("Login efetuado com sucesso!")
